@@ -1,0 +1,133 @@
+.container {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 155px; 
+    height: 55px; 
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 3px;
+    gap: 50px;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.material-symbols-outlined {
+    margin-right: 3px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.navOpctios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    flex-wrap: wrap;
+    transition: color 0.3s; 
+}
+
+.navOpctios:hover {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 3px;
+    .material-symbols-outlined,
+    a{
+        color: black;
+    }
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.login-button,
+.register-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.login-button:hover,
+.register-button:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 1000px) {
+    /* Estilos para pantallas más pequeñas */
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+        margin-bottom: 5px;
+    }
+
+    .navOpcion{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .navOpctios{
+        margin-bottom: 8px;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 17px;
+        margin-bottom: 8px;
+    }
+    
+    .nav ul {
+        gap: 20px; 
+    }
+
+    .nav li {
+        margin-right: 0; 
+    }
+
+    .user-actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        button{
+            margin-bottom: 10px;
+        }
+    }
+}
