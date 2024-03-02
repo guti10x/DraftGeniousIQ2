@@ -13,33 +13,9 @@
     height: 55px;
   }
   
-  nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin: 3px;
-    gap: 50px;
-  }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-  
   .material-symbols-outlined {
     margin-right: 3px;
-    font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 36;
+    font-variation-settings: 'FILL' 0, 'wght' 800, 'GRAD' 0, 'opsz' 88;
   }
   
   .navOpctios {
@@ -54,7 +30,7 @@
   
     &:hover {
       background-color: #f0f0f0;
-      padding: 4px;
+      padding: 3px;
       border-radius: 3px;
   
       .material-symbols-outlined,
@@ -63,25 +39,22 @@
       }
     }
   }
+
+  .money{
+    display: flex;
+    gap: 5px;
+
+    a{
+        color: #f0f0f0;
+        text-decoration: none;
+        font-size: 20px;
+    }
+  }
   
   .user-actions {
     display: flex;
     align-items: center;
-  }
-  
-  .login-button,
-  .register-button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin-left: 10px;
-    cursor: pointer;
-    border-radius: 3px;
-  
-    &:hover {
-      background-color: #45a049;
-    }
+    gap: 23px;
   }
   
   @media screen and (max-width: 1000px) {
@@ -92,30 +65,8 @@
       margin-bottom: 5px;
     }
   
-    .navOpcion {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  
     .navOpctios {
       margin-bottom: 8px;
-    }
-  
-    nav {
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      margin-top: 17px;
-      margin-bottom: 8px;
-    }
-  
-    .nav ul {
-      gap: 20px;
-    }
-  
-    .nav li {
-      margin-right: 0;
     }
   
     .user-actions {
