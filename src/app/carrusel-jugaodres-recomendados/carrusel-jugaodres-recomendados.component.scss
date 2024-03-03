@@ -1,0 +1,73 @@
+.hero-profile{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    margin: 15px;
+    padding: 15px;
+}
+
+.hero-profile_info{
+    margin: 35px;
+}
+
+.hero_data{
+    margin: 0;
+    font-size: 12px;
+    line-height: 15px;
+    color:#fafbfd
+}
+
+.hero-profile_name {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fafbfd;
+}
+
+.hero-profile_tags {
+    margin-bottom: 15px;
+}
+
+.hero-profile_tag {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+    margin: 0 2px 0 0;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.hero-profile_stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+    margin-top: 18px;
+}
+
+.hero-profile_stat-text {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 10px;
+    line-height: 12px;
+    color: #fafbfd;
+}
+
+.hero-profile_stat-numb {
+    font-family: UfcSansCondensedMedium, "Arial Narrow", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+    color: #fafbfd;
+    min-width: 30px;
+    display: inline-block;
+    margin: 0 auto 10px;
+    border-bottom: 2px solid #40ff06;
+    letter-spacing: 3px;
+}
+
+.acciones_player{
+    margin-top: 15px;
+}
