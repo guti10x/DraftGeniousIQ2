@@ -41,6 +41,21 @@
     line-height: 15px;
 }
 
+.team_logo{
+    height: 30px;
+    width: 30px;
+}
+
+.pos-big {
+    width: 25px;
+    height: 25px;
+    font-size: var(--font-caption3);
+}
+
+.pos-4 {
+    background-color:red;
+}
+
 .hero-profile_stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
