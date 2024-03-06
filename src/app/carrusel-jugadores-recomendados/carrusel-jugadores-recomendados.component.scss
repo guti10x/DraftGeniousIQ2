@@ -3,7 +3,7 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: black;
-    margin: 15px;
+    margin: 40px 55px ;
     padding: 15px;
 }
 
@@ -29,6 +29,9 @@
 
 .hero-profile_tags {
     margin-bottom: 15px;
+    margin-top: 15px;
+    color: black;
+
 }
 
 .hero-profile_tag {
@@ -59,7 +62,6 @@
 .hero-profile_stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: black;
     margin-top: 18px;
 }
 
