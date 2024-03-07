@@ -1,162 +1,204 @@
 @if (images) {
 	<ngb-carousel class="hero-profile">
 		<ng-template ngbSlide>
-			<h3>First slide label</h3>
-			<div class="picsum-img-wrapper hero-profile_info">
-				<img [src]="images[0]" alt="Random first slide" />
-			</div>
-			<div class="carousel-caption">
-				<img src="../../assets/teams/1.png" class="team_logo" alt="">
-				<img src="../../assets/positions/mc.png" class="team_logo" alt="">
-				<div class="hero-profile_tags">
-					<p class="hero-profile_tag">Posición</p>
-					<p class="hero-profile_tag">Active</p>
-					<p class="hero-profile_tag">Title Holder</p>
-        		</div>
-				<div class="hero-profile_division">
-					<p class="hero_data">dato1</p>
-					<p class="hero_data">dato2</p>
-					<p class="hero_data">dato3</p>
-					<p class="hero_data">dato4</p>
-				</div>
-				<div class="hero-profile_stats">
-					<div class="hero-profile_stat">
-						<p class="hero-profile_stat-numb">5</p>
-						<p class="hero-profile_stat-text">Goals</p>
-					</div>
-					<div class="hero-profile_stat">
-						<p class="hero-profile_stat-numb">8</p>
-						<p class="hero-profile_stat-text">Assists</p>
-					</div>
-					<div class="hero-profile_stat">
-						<p class="hero-profile_stat-numb">129</p>
-						<p class="hero-profile_stat-text">Points</p>
-					</div>
-				</div>
-				<div class="acciones_player">
-					<button>Fichar</button>
-				</div>
+			<div class="players_box">
+				<!--
+				<button type="button" class="carousel-control-prev carousel-control-prevMod" aria-labelledby="ngb-carousel-0-previous"><span aria-hidden="true" class="carousel-control-prev-icon"></span><span class="visually-hidden" id="ngb-carousel-0-previous">Previous</span></button>
+				-->
+				<div class="player_box">
+					<div class="picsum-img-wrapper hero-profile_infoL">
+						<img [src]="images[0]" alt="Random first slide" />
+					</div>					
 
-				<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-			</div>
+					<div class="carousel-caption info_container">
+
+						<h3>Jude Bellingham</h3>
+			
+						<div class="inisgnias">
+							<img src="../../assets/teams/10.png" class="team_logo" alt="">
+							<img src="../../assets/positions/mc.png" class="team_logo" alt="">
+						</div>
+						
+						<div class="hero-profile_tags inisgnias	">
+							<p class="hero-profile_tag first_point">7</p>
+							<p class="hero-profile_tag">3</p>
+							<p class="hero-profile_tag">2</p>
+							<p class="hero-profile_tag">3</p>
+						</div>
+
+						<div class="hero-profile_division inisgnias2">
+							<p class="hero_data">dato1</p>
+							<p class="hero_data">dato2</p>
+						</div>
+
+						<div class="hero-profile_stats inisgnias">
+							<div class="hero-profile_stat">
+								<p class="hero-profile_stat-numb">5</p>
+								<p class="hero-profile_stat-text">Goals</p>
+							</div>
+							<div class="hero-profile_stat">
+								<p class="hero-profile_stat-numb">8</p>
+								<p class="hero-profile_stat-text">Assists</p>
+							</div>
+							<div class="hero-profile_stat">
+								<p class="hero-profile_stat-numb">129</p>
+								<p class="hero-profile_stat-text">Points</p>
+							</div>
+						</div>
+						<div class="acciones_player btn_fichar">
+							<button>Fichar</button>
+						</div>
+					</div>
+				</div>
+				<div class="player_box">
+					<div class="picsum-img-wrapper hero-profile_infoR">
+						<img [src]="images[1]" alt="Random first slide" />
+					</div>
+
+					<div class="carousel-caption info_container">
+
+						<h3>Álvaro Morata</h3>
+			
+						<div class="inisgnias">
+							<img src="../../assets/teams/2.png" class="team_logo" alt="">
+							<img src="../../assets/positions/dl.png" class="team_logo" alt="">
+						</div>
+						
+						<div class="hero-profile_tags inisgnias	">
+							<p class="hero-profile_tag first_point">3</p>
+							<p class="hero-profile_tag">3</p>
+							<p class="hero-profile_tag">2</p>
+							<p class="hero-profile_tag">3</p>
+						</div>
+
+						<div class="hero-profile_division inisgnias2">
+							<p class="hero_data">dato1</p>
+							<p class="hero_data">dato2</p>
+						</div>
+
+						<div class="hero-profile_stats inisgnias">
+							<div class="hero-profile_stat">
+								<p class="hero-profile_stat-numb">5</p>
+								<p class="hero-profile_stat-text">Goals</p>
+							</div>
+							<div class="hero-profile_stat">
+								<p class="hero-profile_stat-numb">8</p>
+								<p class="hero-profile_stat-text">Assists</p>
+							</div>
+							<div class="hero-profile_stat">
+								<p class="hero-profile_stat-numb">129</p>
+								<p class="hero-profile_stat-text">Points</p>
+							</div>
+						</div>
+						<div class="acciones_player btn_fichar">
+							<button>Fichar</button>
+						</div>
+					</div>
+				</div>
+				<!--
+					<button type="button" class="carousel-control-next carousel-control-nextMod" aria-labelledby="ngb-carousel-0-next"><span aria-hidden="true" class="carousel-control-next-icon"></span><span class="visually-hidden" id="ngb-carousel-0-next">Next</span></button>
+				-->
+				</div>	
 		</ng-template>
 		<ng-template ngbSlide>
-			<h3>Second slide label</h3>
-			<div class="picsum-img-wrapper hero-profile_info">
-				<img [src]="images[1]" alt="Random second slide" />
-			</div>
-			<div class="carousel-caption">
-				<img src="../../assets/teams/1.png" class="team_logo" alt="">
-				<img src="../../assets/positions/mc.png" class="team_logo" alt="">
-				<div class="hero-profile_tags">
-					<p class="hero-profile_tag">Posición</p>
-					<p class="hero-profile_tag">Active</p>
-					<p class="hero-profile_tag">Title Holder</p>
-				</div>
-				<div class="hero-profile_division">
-					<p class="hero_data">dato1</p>
-					<p class="hero_data">dato2</p>
-					<p class="hero_data">dato3</p>
-					<p class="hero_data">dato4</p>
-				</div>
-				<div class="hero-profile_stats">
-					<div class="hero-profile_stat">
-						<p class="hero-profile_stat-numb">5</p>
-						<p class="hero-profile_stat-text">Goals</p>
+			<div class="players_box">
+				<!--
+				<button type="button" class="carousel-control-prev carousel-control-prevMod" aria-labelledby="ngb-carousel-0-previous"><span aria-hidden="true" class="carousel-control-prev-icon"></span><span class="visually-hidden" id="ngb-carousel-0-previous">Previous</span></button>
+				-->
+				<div class="player_box">
+					<div class="picsum-img-wrapper hero-profile_infoR">
+						<img [src]="images[2]" alt="Random first slide" />
 					</div>
-					<div class="hero-profile_stat">
-						<p class="hero-profile_stat-numb">8</p>
-						<p class="hero-profile_stat-text">Assists</p>
-					</div>
-					<div class="hero-profile_stat">
-						<p class="hero-profile_stat-numb">129</p>
-						<p class="hero-profile_stat-text">Points</p>
-					</div>
-				</div>
-				<div class="acciones_player">
-					<button>Fichar</button>
-				</div>
-				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</div>
-		</ng-template>
-		<ng-template ngbSlide>
-			<h3>Third slide label</h3>
-			<div class="picsum-img-wrapper hero-profile_info">
-				<img [src]="images[2]" alt="Random third slide" />
-			</div>
-			<div class="carousel-caption">
-				<img src="../../assets/teams/1.png" class="team_logo" alt="">
-				<img src="../../assets/positions/mc.png" class="team_logo" alt="">
-				<div class="hero-profile_tags">
-					<p class="hero-profile_tag">Posición</p>
-					<p class="hero-profile_tag">Active</p>
-					<p class="hero-profile_tag">Title Holder</p>
-				</div>
-				<div class="hero-profile_division">
-					<p class="hero_data">dato1</p>
-					<p class="hero_data">dato2</p>
-					<p class="hero_data">dato3</p>
-					<p class="hero_data">dato4</p>
-				</div>
-				<div class="hero-profile_stats">
-					<div class="hero-profile_stat">
-						<p class="hero-profile_stat-numb">5</p>
-						<p class="hero-profile_stat-text">Goals</p>
-					</div>
-					<div class="hero-profile_stat">
-						<p class="hero-profile_stat-numb">8</p>
-						<p class="hero-profile_stat-text">Assists</p>
-					</div>
-					<div class="hero-profile_stat">
-						<p class="hero-profile_stat-numb">129</p>
-						<p class="hero-profile_stat-text">Points</p>
+
+					<div class="carousel-caption info_container">
+
+						<h3>Borja Mayoral</h3>
+			
+						<div class="inisgnias">
+							<img src="../../assets/teams/6.png" class="team_logo" alt="">
+							<img src="../../assets/positions/dl.png" class="team_logo" alt="">
+						</div>
+						
+						<div class="hero-profile_tags inisgnias	">
+							<p class="hero-profile_tag first_point">14</p>
+							<p class="hero-profile_tag">5</p>
+							<p class="hero-profile_tag">2</p>
+							<p class="hero-profile_tag">6</p>
+						</div>
+
+						<div class="hero-profile_division inisgnias2">
+							<p class="hero_data">dato1</p>
+							<p class="hero_data">dato2</p>
+						</div>
+
+						<div class="hero-profile_stats inisgnias">
+							<div class="hero-profile_stat">
+								<p class="hero-profile_stat-numb">5</p>
+								<p class="hero-profile_stat-text">Goals</p>
+							</div>
+							<div class="hero-profile_stat">
+								<p class="hero-profile_stat-numb">8</p>
+								<p class="hero-profile_stat-text">Assists</p>
+							</div>
+							<div class="hero-profile_stat">
+								<p class="hero-profile_stat-numb">129</p>
+								<p class="hero-profile_stat-text">Points</p>
+							</div>
+						</div>
+						<div class="acciones_player btn_fichar">
+							<button>Fichar</button>
+						</div>
 					</div>
 				</div>
-				<div class="acciones_player">
-					<button>Fichar</button>
-				 </div>
-				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-			</div>
-		</ng-template>
-		<ng-template ngbSlide>
-			<h3>Third slide label</h3>
-			<div class="picsum-img-wrapper hero-profile_info">
-				<img [src]="images[3]" alt="Random third slide" />
-			</div>
-			<div class="carousel-caption">
-				<img src="../../assets/teams/1.png" class="team_logo" alt="">
-				<img src="../../assets/positions/mc.png" class="team_logo" alt="">
-				<div class="hero-profile_tags">
-					<p class="hero-profile_tag">Posición</p>
-					<p class="hero-profile_tag">Active</p>
-					<p class="hero-profile_tag">Title Holder</p>
-				</div>
-				<div class="hero-profile_division">
-					<p class="hero_data">dato1</p>
-					<p class="hero_data">dato2</p>
-					<p class="hero_data">dato3</p>
-					<p class="hero_data">dato4</p>
-				</div>
-				<div class="hero-profile_stats">
-					<div class="hero-profile_stat">
-						<p class="hero-profile_stat-numb">5</p>
-						<p class="hero-profile_stat-text">Goals</p>
+				<div class="player_box">
+					<div class="picsum-img-wrapper hero-profile_infoL">
+						<img [src]="images[3]" alt="Random first slide" />
 					</div>
-					<div class="hero-profile_stat">
-						<p class="hero-profile_stat-numb">8</p>
-						<p class="hero-profile_stat-text">Assists</p>
-					</div>
-					<div class="hero-profile_stat">
-						<p class="hero-profile_stat-numb">129</p>
-						<p class="hero-profile_stat-text">Points</p>
+
+					<div class="carousel-caption info_container">
+
+						<h3>Pedri</h3>
+			
+						<div class="inisgnias">
+							<img src="../../assets/teams/10.png" class="team_logo" alt="">
+							<img src="../../assets/positions/mc.png" class="team_logo" alt="">
+						</div>
+						
+						<div class="hero-profile_tags inisgnias	">
+							<p class="hero-profile_tag first_point">2</p>
+							<p class="hero-profile_tag">3</p>
+							<p class="hero-profile_tag">2</p>
+							<p class="hero-profile_tag">2</p>
+						</div>
+
+						<div class="hero-profile_division inisgnias2">
+							<p class="hero_data">dato1</p>
+							<p class="hero_data">dato2</p>
+						</div>
+
+						<div class="hero-profile_stats inisgnias">
+							<div class="hero-profile_stat">
+								<p class="hero-profile_stat-numb">10</p>
+								<p class="hero-profile_stat-text">Goals</p>
+							</div>
+							<div class="hero-profile_stat">
+								<p class="hero-profile_stat-numb">5</p>
+								<p class="hero-profile_stat-text">Assists</p>
+							</div>
+							<div class="hero-profile_stat">
+								<p class="hero-profile_stat-numb">99</p>
+								<p class="hero-profile_stat-text">Points</p>
+							</div>
+						</div>
+						<div class="acciones_player btn_fichar">
+							<button>Fichar</button>
+						</div>
 					</div>
 				</div>
-				<div class="acciones_player">
-					<button>Fichar</button>
-				 </div>
-				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-			</div>
+				<!--
+					<button type="button" class="carousel-control-next carousel-control-nextMod" aria-labelledby="ngb-carousel-0-next"><span aria-hidden="true" class="carousel-control-next-icon"></span><span class="visually-hidden" id="ngb-carousel-0-next">Next</span></button>
+				-->
+			</div>	
 		</ng-template>
 	</ngb-carousel>
 }
