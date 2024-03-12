@@ -1,16 +1,15 @@
-.container {
-    background-color: black;
-    border: 1px solid white;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    position: relative;
-  }
-  
+.main_menu{
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  position: relative;
+
   .logo img {
     width: 155px;
     height: 55px;
@@ -89,3 +88,4 @@
       }
     }
   }
+}
