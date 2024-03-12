@@ -1,16 +1,101 @@
 <ng-template #contenido let-modal>
-    <div class="modal-header">
-        <h4 class="modal-title">Titulo Modal</h4>
+    <div class="modal-header header_modal">
+        <h4 class="modal-title">Jugador1 vs Jugador2</h4>
         <button class="close" aria-label="close" type="button" (click)="modal.dismiss()">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
     <div class="modal-body">
-        Jude Bellingham vs Álvaro Morata
+        <div class="players">
+            <div class="subheader">
+                <div class="player">
+                    <div class="player_comb">
+                        <div class="insignias">
+                            <img [src]="players[0].position" class="position_logo" alt="">
+                            <img [src]="players[0].team" class="team_logo" alt="">
+                        </div>
+                        <img [src]="players[0].image" class="player_img" />
+                    </div>
+                    <div class="hero-profile_tags points"> 
+                        <p class="hero-profile_tag first_point">{{ players[0].point1 }}</p>
+                        <p class="hero-profile_tag">{{ players[0].point2 }}</p>
+                        <p class="hero-profile_tag">{{ players[0].point3 }}</p>
+                        <p class="hero-profile_tag">{{ players[0].point4 }}</p>
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="player_comb">
+                        <div class="insignias">
+                            <img [src]="players[1].position" class="position_logo" alt="">
+                            <img [src]="players[1].team" class="team_logo" alt="">
+                        </div>
+                        <img [src]="players[1].image" class="player_img" />
+                    </div>
+                    <div class="hero-profile_tags points">
+                        <p class="hero-profile_tag first_point">{{ players[1].point1 }}</p>
+                        <p class="hero-profile_tag">{{ players[1].point2 }}</p>
+                        <p class="hero-profile_tag">{{ players[1].point3 }}</p>
+                        <p class="hero-profile_tag">{{ players[1].point4 }}</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-profile_division info_player">
+                <p class="hero_data">{{ players[0].dato1 }} : Valor de mercado : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Resultado del partido : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Próximo rival : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Próximo partido es local : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Media de puntos como local : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Media de puntos como visitante : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Edad : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Altura : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Peso : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Minutos jugados en el último partido : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Probabilidad de asistencia : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Paradas : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Goles evitados : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Despeje de puños : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Salida con balón exitosa : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Captura de balón en altura exitosa : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Toques de balón : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Pases precisos : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Pases clave : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Centros precisos : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Pase largo preciso : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Ocasiones evitadas de gol : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Tiros bloqueados : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Pases interceptados : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Robos de balón sin falta : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Veces regateado : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Duelos en el suelo ganados : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Duelos aéreos ganados : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Faltas cometidas : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Faltas recibidas : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Tiros a puerta : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Tiros fuera de puerta : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Disparos bloqueados : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Regates exitosos : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Goles : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Asistencias : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Probabilidad de disparos convertidos en goles : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Penaltis fallados : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Ocasiones de gol generadas : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Penaltys conseguidos : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Ocasiones de gol desperdiciadas : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Ocasiones de gol evitadas desde dentro del área : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Penalties cometidos : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Veces en fuera de juego : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Disparos al palo : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Causa por no estar convocado : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Errores que derivan en un disparo del rival : {{ players[1].dato2 }}</p>
+                <p class="hero_data">{{ players[0].dato1 }} : Errores que derivan en un gol del rival : {{ players[1].dato2 }}</p>
+            </div>
+        </div>
     </div>
-    <div class="modal-footer">
+
+    <div class="modal-footer  footer_modal">
         <button type="button" class="btn btn-success" (click)="modal.close()">Ok!</button>
     </div>
 </ng-template>
 
-<button type="button" class="btn btn-outline-danger btn_mod" (click)="openSM(contenido)">Valorar fichaje.</button>
+<button type="button" class="btn btn-outline-danger btn_mod" (click)="openSM(contenido)">Valorar fichaje</button>
