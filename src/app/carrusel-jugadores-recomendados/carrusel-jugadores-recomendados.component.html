@@ -1,4 +1,4 @@
-@if (images) {
+@if (players[0].image) {
 	<ngb-carousel class="hero-profile">
 		<ng-template ngbSlide>
 			<div class="players_box">
@@ -7,41 +7,41 @@
 				-->
 				<div class="player_box">
 					<div class="picsum-img-wrapper hero-profile_infoL">
-						<img [src]="images[0]" alt="Random first slide" />
+						<img [src]="players[0].image" alt="Random first slide" />
 					</div>					
 
 					<div class="carousel-caption info_container">
 
-						<h3>Jude Bellingham</h3>
+						<h3>{{ players[0].name }}</h3>
 			
 						<div class="inisgnias">
-							<img src="../../assets/teams/10.png" class="team_logo" alt="">
-							<img src="../../assets/positions/mc.png" class="team_logo" alt="">
+							<img [src]="players[0].team" class="team_logo" alt="">
+    						<img [src]="players[0].position" class="team_logo" alt="">
 						</div>
 						
 						<div class="hero-profile_tags inisgnias	">
-							<p class="hero-profile_tag first_point">7</p>
-							<p class="hero-profile_tag">3</p>
-							<p class="hero-profile_tag">2</p>
-							<p class="hero-profile_tag">3</p>
+							<p class="hero-profile_tag first_point">{{ players[0].point1 }}</p>
+							<p class="hero-profile_tag">{{ players[0].point2 }}</p>
+							<p class="hero-profile_tag">{{ players[0].point3 }}</p>
+							<p class="hero-profile_tag">{{ players[0].point4 }}</p>
 						</div>
 
 						<div class="hero-profile_division inisgnias2">
-							<p class="hero_data">dato1</p>
-							<p class="hero_data">dato2</p>
+							<p class="hero_data">{{ players[0].dato1 }}</p>
+							<p class="hero_data">{{ players[0].dato2 }}</p>
 						</div>
 
 						<div class="hero-profile_stats inisgnias">
 							<div class="hero-profile_stat">
-								<p class="hero-profile_stat-numb">5</p>
+								<p class="hero-profile_stat-numb">{{ players[0].goal }}</p>
 								<p class="hero-profile_stat-text">Goals</p>
 							</div>
 							<div class="hero-profile_stat">
-								<p class="hero-profile_stat-numb">8</p>
+								<p class="hero-profile_stat-numb">{{ players[0].assists }}</p>
 								<p class="hero-profile_stat-text">Assists</p>
 							</div>
 							<div class="hero-profile_stat">
-								<p class="hero-profile_stat-numb">129</p>
+								<p class="hero-profile_stat-numb">{{ players[0].points }}</p>
 								<p class="hero-profile_stat-text">Points</p>
 							</div>
 						</div>
@@ -52,41 +52,41 @@
 				</div>
 				<div class="player_box">
 					<div class="picsum-img-wrapper hero-profile_infoR">
-						<img [src]="images[1]" alt="Random first slide" />
+						<img [src]="players[1].image" alt="Random first slide" />
 					</div>
 
 					<div class="carousel-caption info_container">
 
-						<h3>Álvaro Morata</h3>
+						<h3>{{ players[1].name }}</h3>
 			
 						<div class="inisgnias">
-							<img src="../../assets/teams/2.png" class="team_logo" alt="">
-							<img src="../../assets/positions/dl.png" class="team_logo" alt="">
+							<img [src]="players[1].team" class="team_logo" alt="">
+    						<img [src]="players[1].position" class="team_logo" alt="">
 						</div>
 						
 						<div class="hero-profile_tags inisgnias	">
-							<p class="hero-profile_tag first_point">3</p>
-							<p class="hero-profile_tag">3</p>
-							<p class="hero-profile_tag">2</p>
-							<p class="hero-profile_tag">3</p>
+							<p class="hero-profile_tag first_point">{{ players[1].point1 }}</p>
+							<p class="hero-profile_tag">{{ players[1].point2 }}</p>
+							<p class="hero-profile_tag">{{ players[1].point3 }}</p>
+							<p class="hero-profile_tag">{{ players[1].point4 }}</p>
 						</div>
 
 						<div class="hero-profile_division inisgnias2">
-							<p class="hero_data">dato1</p>
-							<p class="hero_data">dato2</p>
+							<p class="hero_data">{{ players[1].dato1 }}</p>
+							<p class="hero_data">{{ players[1].dato2 }}</p>
 						</div>
 
 						<div class="hero-profile_stats inisgnias">
 							<div class="hero-profile_stat">
-								<p class="hero-profile_stat-numb">5</p>
+								<p class="hero-profile_stat-numb">{{ players[1].goal }}</p>
 								<p class="hero-profile_stat-text">Goals</p>
 							</div>
 							<div class="hero-profile_stat">
-								<p class="hero-profile_stat-numb">8</p>
+								<p class="hero-profile_stat-numb">{{ players[1].assists }}</p>
 								<p class="hero-profile_stat-text">Assists</p>
 							</div>
 							<div class="hero-profile_stat">
-								<p class="hero-profile_stat-numb">129</p>
+								<p class="hero-profile_stat-numb">{{ players[1].points }}</p>
 								<p class="hero-profile_stat-text">Points</p>
 							</div>
 						</div>
@@ -107,41 +107,41 @@
 				-->
 				<div class="player_box">
 					<div class="picsum-img-wrapper hero-profile_infoR">
-						<img [src]="images[2]" alt="Random first slide" />
+						<img [src]="players[2].image" alt="Random first slide" />
 					</div>
 
 					<div class="carousel-caption info_container">
 
-						<h3>Borja Mayoral</h3>
+						<h3>{{ players[2].name }}</h3>
 			
 						<div class="inisgnias">
-							<img src="../../assets/teams/6.png" class="team_logo" alt="">
-							<img src="../../assets/positions/dl.png" class="team_logo" alt="">
+							<img [src]="players[2].team" class="team_logo" alt="">
+    						<img [src]="players[2].position" class="team_logo" alt="">
 						</div>
 						
 						<div class="hero-profile_tags inisgnias	">
-							<p class="hero-profile_tag first_point">14</p>
-							<p class="hero-profile_tag">5</p>
-							<p class="hero-profile_tag">2</p>
-							<p class="hero-profile_tag">6</p>
+							<p class="hero-profile_tag first_point">{{ players[2].point1 }}</p>
+							<p class="hero-profile_tag">{{ players[2].point2 }}</p>
+							<p class="hero-profile_tag">{{ players[2].point3 }}</p>
+							<p class="hero-profile_tag">{{ players[2].point4 }}</p>
 						</div>
 
 						<div class="hero-profile_division inisgnias2">
-							<p class="hero_data">dato1</p>
-							<p class="hero_data">dato2</p>
+							<p class="hero_data">{{ players[2].dato1 }}</p>
+							<p class="hero_data">{{ players[2].dato2 }}</p>
 						</div>
 
 						<div class="hero-profile_stats inisgnias">
 							<div class="hero-profile_stat">
-								<p class="hero-profile_stat-numb">5</p>
+								<p class="hero-profile_stat-numb">{{ players[2].goal }}</p>
 								<p class="hero-profile_stat-text">Goals</p>
 							</div>
 							<div class="hero-profile_stat">
-								<p class="hero-profile_stat-numb">8</p>
+								<p class="hero-profile_stat-numb">{{ players[2].assists }}</p>
 								<p class="hero-profile_stat-text">Assists</p>
 							</div>
 							<div class="hero-profile_stat">
-								<p class="hero-profile_stat-numb">129</p>
+								<p class="hero-profile_stat-numb">{{ players[2].points }}</p>
 								<p class="hero-profile_stat-text">Points</p>
 							</div>
 						</div>
@@ -152,41 +152,41 @@
 				</div>
 				<div class="player_box">
 					<div class="picsum-img-wrapper hero-profile_infoL">
-						<img [src]="images[3]" alt="Random first slide" />
+						<img [src]="players[3].image" alt="Random first slide" />
 					</div>
 
 					<div class="carousel-caption info_container">
 
-						<h3>Pedri</h3>
+						<h3>{{ players[3].name }}</h3>
 			
 						<div class="inisgnias">
-							<img src="../../assets/teams/10.png" class="team_logo" alt="">
-							<img src="../../assets/positions/mc.png" class="team_logo" alt="">
+							<img [src]="players[3].team" class="team_logo" alt="">
+    						<img [src]="players[3].position" class="team_logo" alt="">
 						</div>
 						
 						<div class="hero-profile_tags inisgnias	">
-							<p class="hero-profile_tag first_point">2</p>
-							<p class="hero-profile_tag">3</p>
-							<p class="hero-profile_tag">2</p>
-							<p class="hero-profile_tag">2</p>
+							<p class="hero-profile_tag first_point">{{ players[3].point1 }}</p>
+							<p class="hero-profile_tag">{{ players[3].point2 }}</p>
+							<p class="hero-profile_tag">{{ players[3].point3 }}</p>
+							<p class="hero-profile_tag">{{ players[3].point4 }}</p>
 						</div>
 
 						<div class="hero-profile_division inisgnias2">
-							<p class="hero_data">dato1</p>
-							<p class="hero_data">dato2</p>
+							<p class="hero_data">{{ players[3].dato1 }}</p>
+							<p class="hero_data">{{ players[3].dato2 }}</p>
 						</div>
 
 						<div class="hero-profile_stats inisgnias">
 							<div class="hero-profile_stat">
-								<p class="hero-profile_stat-numb">10</p>
+								<p class="hero-profile_stat-numb">{{ players[3].goal }}</p>
 								<p class="hero-profile_stat-text">Goals</p>
 							</div>
 							<div class="hero-profile_stat">
-								<p class="hero-profile_stat-numb">5</p>
+								<p class="hero-profile_stat-numb">{{ players[3].assists }}</p>
 								<p class="hero-profile_stat-text">Assists</p>
 							</div>
 							<div class="hero-profile_stat">
-								<p class="hero-profile_stat-numb">99</p>
+								<p class="hero-profile_stat-numb">{{ players[3].points }}</p>
 								<p class="hero-profile_stat-text">Points</p>
 							</div>
 						</div>
