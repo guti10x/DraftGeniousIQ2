@@ -2,7 +2,7 @@ import { Component, inject, TemplateRef, ViewEncapsulation } from '@angular/core
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'ngbd-offcanvas-options',
+  selector: 'btn-user',
   standalone: true,
   templateUrl: './btn-desplegable-user.component.html',
   styleUrl: './btn-desplegable-user.component.scss'
