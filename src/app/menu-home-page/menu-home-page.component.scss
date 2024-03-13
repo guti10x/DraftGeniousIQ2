@@ -59,7 +59,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 23px;
+    gap: 35px;
+  }
+  .icons_UN{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
   }
   
   @media screen and (max-width: 1000px) {
