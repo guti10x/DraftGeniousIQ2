@@ -1,0 +1,47 @@
+<form>
+	<div class="mb-3 row">
+		<label for="table-filtering-search" class="col-xs-3 col-sm-auto col-form-label">Search user:</label>
+		<div class="col-xs-3 col-sm-auto">
+			<input id="table-filtering-search" class="form-control" type="text" [formControl]="filter" />
+		</div>
+	</div>
+</form>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">ID</th>
+			<th scope="col">Country</th>
+			<th scope="col">Name</th>
+			<th scope="col">Email</th>
+            <th scope="col">Password</th>
+            <th scope="col">EsAdmin</th>
+            <th scope="col">Equipo</th>
+		</tr>
+	</thead>
+    <tbody>
+		@for (user of users$ | async; track user.id; let i = $index) {
+			<tr>
+				<th scope="row">{{ i + 1 }}</th>
+				<td>
+					<img
+						[src]="'https://upload.wikimedia.org/wikipedia/commons/' + user.flag"
+						[alt]="'The flag of ' + user.name"
+						class="me-2"
+						style="width: 20px"
+					/>
+					<ngb-highlight [result]="user.name" [term]="filter.value" />
+				</td>
+				<td><ngb-highlight [result]="user.name " [term]="filter.value" /></td>
+				<td><ngb-highlight [result]="user.email " [term]="filter.value" /></td>
+                <td><ngb-highlight [result]="user.psw | number" [term]="filter.value" /></td>
+                <td><ngb-highlight [result]="user.esAdmin " [term]="filter.value" /></td>
+				<td><ngb-highlight [result]="user.equipo " [term]="filter.value" /></td>
+			</tr>
+		} @empty {
+			<tr>
+				<td colspan="4" style="text-align: center">No countries found</td>
+			</tr>
+		}
+	</tbody>
+</table>
