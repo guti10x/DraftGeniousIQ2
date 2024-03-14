@@ -6,24 +6,24 @@
     <nav>
         <div class="navOpctios">
             <span class="material-symbols-outlined">sports_soccer</span>
-            <a href="#">Application</a>
+            <a routerLink="/application">Application</a>
         </div>
         <div class="navOpctios">
             <span class="material-symbols-outlined">payments</span>
-            <a href="#">Pricing</a>
-        </div>
+            <a routerLink="/pricing">Pricing</a>
+        </div> 
         <div class="navOpctios">
             <span class="material-symbols-outlined">description</span>
-            <a href="#">Documentation</a>
+            <a routerLink="/documentation">Documentation</a>
         </div>
         <div class="navOpctios">
             <span class="material-symbols-outlined">download_for_offline</span>
-            <a href="#">Download</a>
+            <a routerLink="/download">Download</a>
         </div>
            
         <div class="navOpctios">
             <span class="material-symbols-outlined">group</span>
-            <a href="#">Abaut us</a>
+            <a routerLink="/about_us">About_us</a>
         </div>
     </nav>
     <div class="user-actions">
@@ -31,3 +31,5 @@
         <button class="register-button">Register</button>
     </div>
 </div>
+
+<router-outlet></router-outlet>
