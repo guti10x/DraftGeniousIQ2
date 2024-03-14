@@ -1,12 +1,20 @@
-<button
-	type="button"
-	class="btn btn-outline-secondary me-2"
-	placement="bottom"
-	ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-	popoverTitle="Popover on bottom"
->
-	<div class="money">
-		<h3 class="money_value">{{ money_bank }}</h3>
-		<span class="material-symbols-outlined">euro</span>
+<div class="row">
+	<div class="col">
+		<div ngbDropdown class="d-inline-block">
+			<button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+				<div class="money">
+					<h3 class="money_value">{{ money_bank }}</h3>
+					<span class="material-symbols-outlined">euro</span>
+				</div>
+			</button>
+			<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+				<p ngbDropdownItem>{{transacciones[0]}}</p>
+				<p ngbDropdownItem>{{transacciones[1]}}</p>
+				<p ngbDropdownItem>{{transacciones[2]}}</p>
+				<p ngbDropdownItem>{{transacciones[3]}}</p>
+				<p ngbDropdownItem>{{transacciones[4]}}</p>
+				<p ngbDropdownItem>{{transacciones[5]}}</p>
+			</div>
+		</div>
 	</div>
-</button>
+</div>

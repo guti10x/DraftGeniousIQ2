@@ -6,15 +6,28 @@
     gap: 5px;
     color: #f0f0f0;
 
-    a{
+    .material-symbols-outlined {
+        font-size: 20px;
         color: #f0f0f0;
         text-decoration: none;
-        font-size: 20px;
     }
   }
 
-  .money_value{
+.money_value{
     margin-top: 5px;
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
-  }
+}
+
+.dropdown-toggle {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1px;
+    padding-top: 3px; /* Relleno de 10 píxeles en la parte superior */
+    padding-right: 10px; /* Relleno de 20 píxeles en el lado derecho */
+    padding-bottom: 3px; /* Relleno de 10 píxeles en la parte inferior */
+    padding-left: 10px; 
+}
