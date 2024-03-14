@@ -17,3 +17,15 @@
 .material-symbols-outlined {
     font-size: 35px; 
 }
+
+.notification_row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 28px;
+    margin-left: 20px;
+    align-items: center;
+    gap: 10px;
+    p{
+       margin-top: 13px;
+    }
+}

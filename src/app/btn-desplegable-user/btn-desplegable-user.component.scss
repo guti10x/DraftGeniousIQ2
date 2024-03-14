@@ -12,3 +12,58 @@
 .material-symbols-outlined {
     font-size: 35px; 
 }
+
+.psw{
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+
+    P{
+        margin-top: 15PX;
+    }
+    button{
+        margin-top: 8px;
+        margin-left: 4px;
+        border: none;
+        background-color: white;
+    }
+}
+
+.hidepsw {
+    font-size: 14px;
+    padding: 1px;
+}
+
+.btn_change_psw{
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    margin-left: 19px;
+}
+
+.text-endf{
+    margin-top: 18px;
+    margin-left: 19px;
+    display: flex;
+    justify-content: left;
+    button{
+        background-color: transparent;
+        border: 2px solid blue;
+        color: blue;
+    }
+}
+
+.titulo {
+    font-weight: bold; 
+    color: black;
+    font-size: 19px; 
+}
+
+.titulo_value{
+    color: blue;
+    font-weight:lighter; 
+    margin-left: 6px;
+    font-size: 19px;
+}
+  
