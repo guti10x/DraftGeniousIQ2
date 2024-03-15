@@ -8,6 +8,7 @@ import { LandingPricingComponent } from './landing-pricing/landing-pricing.compo
 import { LandingDocumentationComponent } from './landing-documentation/landing-documentation.component';
 import { LandingDownloadComponent } from './landing-download/landing-download.component';
 import { LandingAboutUsComponent } from './landing-about-us/landing-about-us.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
 
 export const routes: Routes = [
   { path: '', component: LandingApplicationComponent },
@@ -18,6 +19,7 @@ export const routes: Routes = [
   { path: 'about_us', component: LandingAboutUsComponent },
   { path: '', component: LandingPageComponent },
   { path: 'login', component: LoginPageComponent },
+  { path: 'register', component: RegisterPageComponent },
   { path: 'home', component: HomePageComponent },
   { path: 'admin', component: AdminPageComponent },
   { path: '**', redirectTo: '' } // Redirigir a la página de inicio por defecto en caso de ruta no encontrada

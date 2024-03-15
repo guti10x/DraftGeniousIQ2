@@ -1,9 +1,12 @@
 import { Component, inject, TemplateRef, OnInit } from '@angular/core';
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { LandingPageComponent } from '../landing-page/landing-page.component';
 
 @Component({
   selector: 'btn-user',
   standalone: true,
+  imports: [RouterLink, RouterOutlet, LandingPageComponent],
   templateUrl: './btn-desplegable-user.component.html',
   styleUrl: './btn-desplegable-user.component.scss'
 })
