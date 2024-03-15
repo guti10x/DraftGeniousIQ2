@@ -2,6 +2,7 @@ import { Component, inject, TemplateRef, OnInit } from '@angular/core';
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { LandingPageComponent } from '../landing-page/landing-page.component';
+import { SharedDataMenuVisibleService } from '../shared-data-menu-visible.service';
 
 @Component({
   selector: 'btn-user',
@@ -26,7 +27,11 @@ export class BtnDesplegableUserComponent {
 
   mostrarCensurada: boolean = false;
 
-  constructor() { }
+  constructor(private sharedDataMenuVisibleService: SharedDataMenuVisibleService) {}
+
+  cambiarVisibilidadMenu(): void {
+    this.sharedDataMenuVisibleService.toggleMenuVisibility();
+  }
 
   alternarMostrarContrasena(): void {
     this.mostrarCensurada = !this.mostrarCensurada;

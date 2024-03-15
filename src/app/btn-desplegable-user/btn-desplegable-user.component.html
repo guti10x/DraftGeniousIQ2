@@ -15,7 +15,7 @@
 		<button (click)="actualizarContrasena()" class="btn_change_psw">Actualizar contraseña</button>
 		
 		<div class="text-end text-endf">
-			<a routerLink="/landing-page" (click)="offcanvas.close('Close click')" class="btn btn-outline-dark">Log out</a>
+			<a routerLink="/landing-page" (click)="offcanvas.close('Close click')" (click)="cambiarVisibilidadMenu()" class="btn btn-outline-dark">Log out</a>
 		</div>
 	</div>
 </ng-template>
