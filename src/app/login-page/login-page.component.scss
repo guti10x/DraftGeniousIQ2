@@ -12,6 +12,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: white;
 }
 
 body,
@@ -104,11 +105,13 @@ img {
   font-size: 1.25rem;
 }
 
-.login__check, 
-.login__check-box {
+.login__check{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
+  margin-left: 20px;
+  margin-top: 15px;
 }
 
 .login__check {
@@ -117,7 +120,11 @@ img {
 }
 
 .login__check-box {
-  column-gap: .5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .login__check-input {
@@ -138,6 +145,7 @@ img {
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
   background-color: var(--white-color);
   border-radius: 4rem;
   color: var(--black-color);
@@ -145,9 +153,21 @@ img {
   cursor: pointer;
 }
 
+.log-btns{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .login__register {
   font-size: var(--small-font-size);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 30px;
 }
 
 .login__register a {

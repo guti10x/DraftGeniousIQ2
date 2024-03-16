@@ -6,7 +6,7 @@
 
         <div class="login__inputs">
             <div class="login__box">
-                <input type="email" placeholder="Email ID" required class="login__input">
+                <input type="email" placeholder="Email" required class="login__input">
                 <i class="ri-mail-fill"></i>
             </div>
 
@@ -21,16 +21,16 @@
                 <input type="checkbox" class="login__check-input" id="user-check">
                 <label for="user-check" class="login__check-label">Remember me</label>
             </div>
-
-            <a href="#" class="login__forgot">Forgot Password?</a>
         </div>
 
-        <button type="submit" class="login__button">Login</button>
-        <a routerLink="/home">Login user</a>
-        <a routerLink="/admin">Login admin</a>
+        <div class="log-btns">
+            <a routerLink="/home" class="login__button">Login user</a>
+            <a routerLink="/admin" class="login__button">Login admin</a>
+        </div>
 
         <div class="login__register">
-            Don't have an account? <a href="#">Register</a>
+            <a href="#" class="login__forgot">Forgot Password?</a>
+            <p>Don't have an account?<a routerLink="/register" class="login__button">Register</a></p>   
         </div>
     </form>
 </div>
