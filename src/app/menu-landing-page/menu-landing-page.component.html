@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<div class="main_menu">
+<div *ngIf="sharedDataMenuVisibleService.menuVisible" class="main_menu">
     <div class="logo">
         <img src="../../assets/imagenes/draftgeniousIQ2_logo.png" alt="DraftgeniousIQ2">
     </div>
@@ -27,8 +27,8 @@
         </div>
     </nav>
     <div class="user-actions">
-        <a routerLink="/login" class="login-button">Login</a>
-        <a routerLink="/register" class="login-button">Register</a>
+        <a routerLink="/login" class="login-button" (click)="ocultarMenu()">Login</a>
+        <a routerLink="/register" class="login-button" (click)="ocultarMenu()">Register</a>
     </div>
 </div>
 
