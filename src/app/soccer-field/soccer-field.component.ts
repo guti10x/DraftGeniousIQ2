@@ -32,12 +32,12 @@ interface Player {
 })
 export class SoccerFieldComponent {
   players: PlayerDetails[] = [
-    { name: 'Cristiano Ronaldo', number: 7, position: 'Delantero' },
-    { name: 'Lionel Messi', number: 10, position: 'Delantero' },
-    { name: 'Neymar Jr', number: 11, position: 'Delantero' },
-    { name: 'Luka Modric', number: 10, position: 'Centrocampista' },
-    { name: 'Sergio Ramos', number: 4, position: 'Defensa' },
-    { name: 'Thibaut Courtois', number: 1, position: 'Portero' }
+    { name: 'Cristiano Ronaldo', number: 7, position: 'Delantero', image:"../../assets/players/pedri.png" },
+    { name: 'Lionel Messi', number: 10, position: 'Delantero', image:"../../assets/players/pedri.png" },
+    { name: 'Neymar Jr', number: 11, position: 'Delantero', image:"../../assets/players/pedri.png" },
+    { name: 'Luka Modric', number: 10, position: 'Centrocampista', image:"../../assets/players/pedri.png" },
+    { name: 'Sergio Ramos', number: 4, position: 'Defensa', image:"../../assets/players/pedri.png" },
+    { name: 'Thibaut Courtois', number: 1, position: 'Portero', image:"../../assets/players/pedri.png" }
   ];
 
   formacionTactica: formacionTactica = '3-3-3-1';  
@@ -59,17 +59,17 @@ export class SoccerFieldComponent {
   asignarPosiciones451() {
     // Asignar posiciones para la formación 4-5-1
     this.players = [
-      { name: 'Cristiano Ronaldo', number: 7, position: 'Delantero', fieldPosition: { x: 300, y: 750 } },
-      { name: 'Lionel Messi', number: 10, position: 'Delantero', fieldPosition: { x: 200, y: 200 } },
-      { name: 'Neymar Jr', number: 11, position: 'Delantero', fieldPosition: { x: 300, y: 300 } },
-      { name: 'Luka Modric', number: 10, position: 'Centrocampista', fieldPosition: { x: 400, y: 200 } },
-      { name: 'Sergio Ramos', number: 4, position: 'Defensa', fieldPosition: { x: 500, y: 100 } },
-      { name: 'Thibaut Courtois', number: 1, position: 'Portero', fieldPosition: { x: 600, y: 400 } },
-      { name: 'Sergio Busquets', number: 5, position: 'Centrocampista', fieldPosition: { x: 400, y: 300 } },
-      { name: 'Gerard Piqué', number: 3, position: 'Defensa', fieldPosition: { x: 500, y: 200 } },
-      { name: 'Jordi Alba', number: 18, position: 'Defensa', fieldPosition: { x: 600, y: 300 } },
-      { name: 'Sergi Roberto', number: 20, position: 'Centrocampista', fieldPosition: { x: 400, y: 100 } },
-      { name: 'Marc-André ter Stegen', number: 1, position: 'Portero', fieldPosition: { x: 600, y: 100 } }
+      { name: 'Cristiano Ronaldo', number: 7, position: 'Delantero', fieldPosition: { x: 300, y: 750 }, image:"../../assets/positions/df.png" },
+      { name: 'Lionel Messi', number: 10, position: 'Delantero', fieldPosition: { x: 200, y: 200 }, image:"../../assets/positions/df.png" },
+      { name: 'Neymar Jr', number: 11, position: 'Delantero', fieldPosition: { x: 300, y: 300 }, image:"../../assets/positions/df.png" },
+      { name: 'Luka Modric', number: 10, position: 'Centrocampista', fieldPosition: { x: 400, y: 200 }, image:"../../assets/positions/df.png" },
+      { name: 'Sergio Ramos', number: 4, position: 'Defensa', fieldPosition: { x: 500, y: 100 }, image:"../../assets/positions/df.png" },
+      { name: 'Thibaut Courtois', number: 1, position: 'Portero', fieldPosition: { x: 600, y: 400 }, image:"../../assets/positions/df.png" },
+      { name: 'Sergio Busquets', number: 5, position: 'Centrocampista', fieldPosition: { x: 400, y: 300 }, image:"../../assets/positions/df.png" },
+      { name: 'Gerard Piqué', number: 3, position: 'Defensa', fieldPosition: { x: 500, y: 200 }, image:"../../assets/positions/df.png" },
+      { name: 'Jordi Alba', number: 18, position: 'Defensa', fieldPosition: { x: 600, y: 300 }, image:"../../assets/positions/df.png" },
+      { name: 'Sergi Roberto', number: 20, position: 'Centrocampista', fieldPosition: { x: 400, y: 100 }, image:"../../assets/positions/df.png" },
+      { name: 'Marc-André ter Stegen', number: 1, position: 'Portero', fieldPosition: { x: 600, y: 100 }, image:"../../assets/positions/df.png" }
     ];
 
     this.players.forEach((playerDetails: PlayerDetails, index: number) => {
@@ -112,16 +112,16 @@ export class SoccerFieldComponent {
     // Asignar posiciones para la formación 3-3-3-1
     this.players = [
       { name: 'Sergi Roberto', number: 20, position: 'Centrocampista', fieldPosition: { x: 750, y: 240 }, image:"../../assets/positions/df.png" },
-      { name: 'Cristiano Ronaldo', number: 7, position: 'Delantero', fieldPosition: { x: 600, y: 120 } }, 
-      { name: 'Lionel Messi', number: 10, position: 'Delantero', fieldPosition: { x: 600, y: 240 } }, 
-      { name: 'Neymar Jr', number: 11, position: 'Centrocampista', fieldPosition: { x: 600, y: 350 } }, 
-      { name: 'Luka Modric', number: 10, position: 'Centrocampista', fieldPosition: { x: 400, y: 120 } }, 
-      { name: 'Sergio Ramos', number: 4, position: 'Defensa', fieldPosition: { x: 400, y: 240 } }, 
-      { name: 'Thibaut Courtois', number: 1, position: 'Portero', fieldPosition: { x: 400, y: 350 } },
-      { name: 'Gerard Piqué', number: 3, position: 'Defensa', fieldPosition: { x: 200, y: 120 } }, 
-      { name: 'Jordi Alba', number: 18, position: 'Defensa', fieldPosition: { x: 200, y: 240 } },
-      { name: 'Sergio Busquets', number: 5, position: 'Centrocampista', fieldPosition: { x: 200, y: 350 } }, 
-      { name: 'Marc-André ter Stegen', number: 1, position: 'Portero', fieldPosition: { x: 10, y: 240 } }
+      { name: 'Cristiano Ronaldo', number: 7, position: 'Delantero', fieldPosition: { x: 600, y: 120 }, image:"../../assets/positions/df.png" }, 
+      { name: 'Lionel Messi', number: 10, position: 'Delantero', fieldPosition: { x: 600, y: 240 }, image:"../../assets/positions/df.png" }, 
+      { name: 'Neymar Jr', number: 11, position: 'Centrocampista', fieldPosition: { x: 600, y: 350 }, image:"../../assets/positions/df.png" }, 
+      { name: 'Luka Modric', number: 10, position: 'Centrocampista', fieldPosition: { x: 400, y: 120 }, image:"../../assets/positions/df.png" }, 
+      { name: 'Sergio Ramos', number: 4, position: 'Defensa', fieldPosition: { x: 400, y: 240 }, image:"../../assets/positions/df.png" }, 
+      { name: 'Thibaut Courtois', number: 1, position: 'Portero', fieldPosition: { x: 400, y: 350 }, image:"../../assets/positions/df.png" },
+      { name: 'Gerard Piqué', number: 3, position: 'Defensa', fieldPosition: { x: 200, y: 120 }, image:"../../assets/positions/df.png" }, 
+      { name: 'Jordi Alba', number: 18, position: 'Defensa', fieldPosition: { x: 200, y: 240 }, image:"../../assets/positions/df.png" },
+      { name: 'Sergio Busquets', number: 5, position: 'Centrocampista', fieldPosition: { x: 200, y: 350 }, image:"../../assets/positions/df.png" }, 
+      { name: 'Marc-André ter Stegen', number: 1, position: 'Portero', fieldPosition: { x: 10, y: 240 }, image:"../../assets/positions/df.png" }
     ];
 
     this.players.forEach((playerDetails: PlayerDetails, index: number) => {
