@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
-import{MatDialogModule} from '@angular/material/dialog';
-import { PopupComponent } from './popup/popup.component';
+//import {MatDialog} from '@angular/material/dialog';
+//import{MatDialogModule} from '@angular/material/dialog';
+//import { PopupComponent } from './popup/popup.component';
 
 type formacionTactica = '4-4-2' | '4-5-1' | '4-3-3' | '3-5-2' | '3-4-3' | '5-4-1' | '5-3-2' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' ;
 
@@ -9,7 +9,8 @@ interface PlayerDetails {
   name: string;
   number: number;
   position: string;
-  fieldPosition?: { x: number; y: number }; // Nueva propiedad para almacenar la posición en el campo
+  fieldPosition?: { x: number; y: number };
+  image?:string;
 }
 
 interface Player {
@@ -17,12 +18,13 @@ interface Player {
   number: number;
   position: string;
   fieldPosition: { x: number; y: number };
+  image:string;
 }
 
-constructor(private dialog: MatDialog) {}
+//constructor(private dialog: MatDialog) {}
 
 @Component({
-  selector: 'app-soccer-field',
+  selector: 'soccer-field',
   standalone: true,
   imports: [],
   templateUrl: './soccer-field.component.html',
@@ -93,7 +95,7 @@ export class SoccerFieldComponent {
     alert(PlayerDetails);
   }
 
-  openPopup(event: MouseEvent) {
+  /*openPopup(event: MouseEvent) {
     const dialogRef = this.dialog.open(PopupComponent, {
       data: {
         x: event.clientX,
@@ -104,12 +106,12 @@ export class SoccerFieldComponent {
     dialogRef.afterClosed().subscribe(result => {
       console.log('El popup se cerró');
     });
-  }
+  }*/
 
   asignarPosiciones3331() {
     // Asignar posiciones para la formación 3-3-3-1
     this.players = [
-      { name: 'Sergi Roberto', number: 20, position: 'Centrocampista', fieldPosition: { x: 750, y: 240 } },
+      { name: 'Sergi Roberto', number: 20, position: 'Centrocampista', fieldPosition: { x: 750, y: 240 }, image:"../../assets/positions/df.png" },
       { name: 'Cristiano Ronaldo', number: 7, position: 'Delantero', fieldPosition: { x: 600, y: 120 } }, 
       { name: 'Lionel Messi', number: 10, position: 'Delantero', fieldPosition: { x: 600, y: 240 } }, 
       { name: 'Neymar Jr', number: 11, position: 'Centrocampista', fieldPosition: { x: 600, y: 350 } }, 
