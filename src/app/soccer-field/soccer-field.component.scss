@@ -123,35 +123,20 @@
     }
   }
   
-  .pitch-line {
+  /*.pitch-line {
     &.center-circle {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 9.15%; /* Adjust for exact proportion (radius is 9.15 meters) */
+      width: 9.15%; 
       height: 9.15%;
       border-radius: 50%;
       border: 1px solid #fff;
     }
-  }
+  }*/
   
-  .corner-arc {
-    position: absolute;
-    top: 50%;
-    left: 0; /* Adjust for right corner: left: calc(100% - corner-arc-size) */
-    transform: translate(-50%, -50%);
-    width: corner-arc-size;  /* Adjust size as needed */
-    height: corner-arc-size;
-    border-radius: 50%;
-    border: 7px solid #fff; /* Adjust border thickness as desired */
-    border-top-left: transparent;
-    border-top-right: transparent;
-  }
-  
-  .corner-arc.right {
-    left: calc(100% - corner-arc-size);  /* Adjust for right corner */
-    border-top-left: transparent;
-    border-bottom-left: transparent;
+  .player-image {
+    cursor: pointer;
   }
   

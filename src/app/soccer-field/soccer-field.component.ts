@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 //import {MatDialog} from '@angular/material/dialog';
 //import{MatDialogModule} from '@angular/material/dialog';
 //import { PopupComponent } from './popup/popup.component';
@@ -26,7 +27,7 @@ interface Player {
 @Component({
   selector: 'soccer-field',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './soccer-field.component.html',
   styleUrls: ['./soccer-field.component.scss']
 })
@@ -140,4 +141,19 @@ export class SoccerFieldComponent {
       }
       });      
     };
+
+    getPlayerPosition(index: number) {
+      const player = this.players[index];
+      if (player.fieldPosition) {
+        const { x, y } = player.fieldPosition;
+        return {
+          left: `${(x / 800) * 100}%`,
+          top: `${(y / 500) * 100}%`,
+          position: 'absolute',
+          width: '30px', // Ajusta el tamaño de la imagen según sea necesario
+          height: '30px' // Ajusta el tamaño de la imagen según sea necesario
+        };
+      }
+      return {};
+    }
   }

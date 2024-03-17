@@ -14,7 +14,8 @@
         <div class="player-position"></div>
         <div class="player-position"></div>
         <div class="player-position"></div>
-
+        <img *ngFor="let player of players; let i = index" [src]="player.image" [ngStyle]="getPlayerPosition(i)" class="player-image" (click)="showPlayerDetails(i + 1)">
+        
         <div class="pitch-line top"></div>  <div class="pitch-line bottom"></div> <div class="pitch-line left"></div>   <div class="pitch-line right"></div>  <div class="pitch-line center"></div> <div class="pitch-line penalty-area left"></div> <div class="pitch-line penalty-area right"></div> </div>
     </div>
   </div>
