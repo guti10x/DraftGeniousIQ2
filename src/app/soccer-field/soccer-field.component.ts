@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 //import {MatDialog} from '@angular/material/dialog';
 //import{MatDialogModule} from '@angular/material/dialog';
-//import { PopupComponent } from './popup/popup.component';
+import { PopupComponent } from '../popup/popup.component';
 
 type formacionTactica = '4-4-2' | '4-5-1' | '4-3-3' | '3-5-2' | '3-4-3' | '5-4-1' | '5-3-2' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' | '3-3-3-1' | '3-4-2-1' | '3-4-1-2' | '3-5-1-1' | '3-5-2' | '3-4-3' ;
 
@@ -27,7 +27,7 @@ interface Player {
 @Component({
   selector: 'soccer-field',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, PopupComponent],
   templateUrl: './soccer-field.component.html',
   styleUrls: ['./soccer-field.component.scss']
 })
@@ -41,7 +41,8 @@ export class SoccerFieldComponent {
     { name: 'Thibaut Courtois', number: 1, position: 'Portero', image:"../../assets/players/pedri.png" }
   ];
 
-  formacionTactica: formacionTactica = '3-3-3-1';  
+  formacionTactica: formacionTactica = '3-3-3-1';
+  jugadorSeleccionado: PlayerDetails | undefined;  
 
   ngOnInit() {
     this.asignarPosicionesJugadores();
@@ -155,5 +156,13 @@ export class SoccerFieldComponent {
         };
       }
       return {};
+    }
+
+    mostrarVentana(index: number) {
+      this.jugadorSeleccionado = this.players[index];
+    }
+  
+    cerrarVentana() {
+      this.jugadorSeleccionado = undefined;
     }
   }
