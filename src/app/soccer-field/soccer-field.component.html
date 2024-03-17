@@ -14,11 +14,11 @@
         <div class="player-position"></div>
         <div class="player-position"></div>
         <div class="player-position"></div>
-        <!--<img *ngFor="let player of players; let i = index" [src]="player.image" [ngStyle]="getPlayerPosition(i)" class="player-image" (click)="showPlayerDetails(i + 1)">-->
-        <div *ngFor="let player of players; let i = index" class="player-container" [style.left]="getPlayerPosition(i).left" [style.top]="getPlayerPosition(i).top">
+        <img *ngFor="let player of players; let i = index" [src]="player.image" [ngStyle]="getPlayerPosition(i)" class="player-image" (click)="showPlayerDetails(i + 1)">-->
+        <!--<div *ngFor="let player of players; let i = index" class="player-container" [style.left]="getPlayerPosition(i).left" [style.top]="getPlayerPosition(i).top">
           <img [src]="player.image" [style.width.px]="getPlayerPosition(i).width" [style.height.px]="getPlayerPosition(i).height" class="player-image" (click)="mostrarVentana(i)">
-        </div>
-        <popup [players]="jugadorSeleccionado" (cerrarVentana)="cerrarVentana()"></popup>
+        </div>-->
+        <!--<popup [players]="jugadorSeleccionado" (cerrarVentana)="cerrarVentana()"></popup>-->
         <div class="pitch-line top"></div>  <div class="pitch-line bottom"></div> <div class="pitch-line left"></div>   <div class="pitch-line right"></div>  <div class="pitch-line center"></div> <div class="pitch-line penalty-area left"></div> <div class="pitch-line penalty-area right"></div> </div>
     </div>
   </div>
