@@ -1,0 +1,14 @@
+img {
+    max-width: 50%; /* Reduce el tamaño máximo a la mitad del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto original de la imagen */
+  }
+  .section {
+    margin-bottom: 40px; /* Añade espacio debajo de cada sección */
+  }
+  .row:nth-child(odd) .half:first-child img {
+    margin-right: 20px; /* Añade espacio a la derecha de la imagen en filas impares */
+  }
+  
+  .row:nth-child(even) .half:last-child img {
+    margin-left: 20px; /* Añade espacio a la izquierda de la imagen en filas pares */
+  }    

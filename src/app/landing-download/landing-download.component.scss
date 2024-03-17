@@ -1,0 +1,50 @@
+.download-background {
+    background: linear-gradient(120deg, #0a0f0b 0%, #000000 100%);
+    display: flex;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row; 
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start; // Alinear elementos al principio en pantallas más pequeñas
+  }
+    
+}
+.download-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+.icon-container,.text-and-button-container {
+    flex: 1 1 50%; // Toma hasta el 50% del espacio disponible
+    max-width: 50%; // No permite que el contenedor sea más ancho del 50%
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .text-and-button-container {
+    flex-direction: column;
+    align-items: flex-start; // Alinea el texto a la derecha
+  }
+
+  p {
+    color: #fff; /* blanco */
+  }
+  
+  .download-button {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  
