@@ -14,7 +14,7 @@
         <div class="player-position"></div>
         <div class="player-position"></div>
         <div class="player-position"></div>
-        <img *ngFor="let player of players; let i = index" [src]="player.image" [ngStyle]="getPlayerPosition(i)" class="player-image" (click)="showPlayerDetails(i + 1)">-->
+        <img *ngFor="let player of players; let i = index" [src]="player.image" [ngStyle]="getPlayerPosition(i)" class="player-image" (click)="showPlayerDetails(i + 1)">
         <!--<div *ngFor="let player of players; let i = index" class="player-container" [style.left]="getPlayerPosition(i).left" [style.top]="getPlayerPosition(i).top">
           <img [src]="player.image" [style.width.px]="getPlayerPosition(i).width" [style.height.px]="getPlayerPosition(i).height" class="player-image" (click)="mostrarVentana(i)">
         </div>-->
