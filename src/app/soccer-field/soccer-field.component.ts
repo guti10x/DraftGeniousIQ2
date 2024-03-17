@@ -112,7 +112,7 @@ export class SoccerFieldComponent {
   asignarPosiciones3331() {
     // Asignar posiciones para la formación 3-3-3-1
     this.players = [
-      { name: 'Sergi Roberto', number: 20, position: 'Centrocampista', fieldPosition: { x: 750, y: 240 }, image:"../../assets/positions/df.png" },
+      { name: 'Sergi Roberto', number: 20, position: 'Centrocampista', fieldPosition: { x: 750, y: 240 }, image:"../../assets/players/pedri.png" },
       { name: 'Cristiano Ronaldo', number: 7, position: 'Delantero', fieldPosition: { x: 600, y: 120 }, image:"../../assets/positions/df.png" }, 
       { name: 'Lionel Messi', number: 10, position: 'Delantero', fieldPosition: { x: 600, y: 240 }, image:"../../assets/positions/df.png" }, 
       { name: 'Neymar Jr', number: 11, position: 'Centrocampista', fieldPosition: { x: 600, y: 350 }, image:"../../assets/positions/df.png" }, 
@@ -150,8 +150,8 @@ export class SoccerFieldComponent {
           left: `${(x / 800) * 100}%`,
           top: `${(y / 500) * 100}%`,
           position: 'absolute',
-          width: '30px', // Ajusta el tamaño de la imagen según sea necesario
-          height: '30px' // Ajusta el tamaño de la imagen según sea necesario
+          width: '60px', // Ajusta el tamaño de la imagen según sea necesario
+          height: '60px' // Ajusta el tamaño de la imagen según sea necesario
         };
       }
       return {};
